@@ -12,24 +12,24 @@ import type { ResumeConfig } from './types'
 export const resumeConfig: ResumeConfig = {
   // ===== PERSONAL INFO =====
   personal: {
-    name: 'Jane Doe',
+    name: 'Ibrahim DIABY',
     photo: '/images/photo.jpg', // Place your photo in public/images/
     photoBackEmoji: '👩‍💻', // Shown when clicking the photo (3D flip)
     title: {
       en: 'Fullstack Developer',
-      fr: 'Développeuse Fullstack',
+      fr: 'Développeur Fullstack',
     },
     subtitle: {
-      en: '6 years of experience',
-      fr: '6 ans d\'expérience',
+      en: '2 years of experience',
+      fr: '2 ans d\'expérience',
     },
     location: 'Paris, France',
   },
 
   // ===== SEO (used in <head> meta tags) =====
   seo: {
-    title: 'Jane Doe — Fullstack Developer',
-    description: 'Interactive resume of Jane Doe, Fullstack Developer specializing in React and TypeScript.',
+    title: 'Ibrahim Diaby — Fullstack Developer',
+    description: 'Interactive resume of Ibrahim Diaby, Fullstack Developer specializing in React and TypeScript.',
   },
 
   // ===== LANGUAGES =====
@@ -44,10 +44,10 @@ export const resumeConfig: ResumeConfig = {
 
   // ===== CONTACT =====
   contact: [
-    { type: 'github', label: 'janedoe', href: 'https://github.com/janedoe' },
-    { type: 'linkedin', label: 'Jane Doe', href: 'https://linkedin.com/in/janedoe' },
-    { type: 'email', label: 'jane@example.com' },
-    { type: 'phone', label: '+33 6 12 34 56 78' },
+    { type: 'github', label: 'Ibrahim Diaby', href: 'https://github.com/IbrahimDiaby' },
+    { type: 'linkedin', label: 'Ibrahim Diaby', href: 'https://www.linkedin.com/in/ibrahim-d-023474144' },
+    { type: 'email', label: 'ibrahim.diaby707@gmail.com', href:"mailto:ibrahim.diaby707@gmail.com" },
+    { type: 'phone', label: '+33 7 58 71 34 93', href:"tel:+33758713493" },
     { type: 'location', label: 'Paris, France' },
   ],
 
@@ -58,7 +58,7 @@ export const resumeConfig: ResumeConfig = {
       type: 'languages',
       items: [
         { name: { en: 'French', fr: 'Français' }, level: { en: 'Native', fr: 'Natif' } },
-        { name: { en: 'English', fr: 'Anglais' }, level: { en: 'Professional', fr: 'Professionnel' }, details: 'TOEIC 910' },
+        { name: { en: 'English', fr: 'Anglais' }, level: { en: 'Professional', fr: 'Professionnel' }, details: '' },
       ],
     },
     {
@@ -68,6 +68,7 @@ export const resumeConfig: ResumeConfig = {
         { name: 'React' },
         { name: 'TypeScript' },
         { name: 'Angular' },
+        { name: 'Laravel' }
       ],
     },
     {
@@ -76,6 +77,7 @@ export const resumeConfig: ResumeConfig = {
       items: [
         { name: 'Node.js' },
         { name: 'Python' },
+        { name: 'Spring Boot'}
       ],
     },
     {
@@ -83,6 +85,7 @@ export const resumeConfig: ResumeConfig = {
       type: 'badges',
       items: [
         { name: 'PostgreSQL' },
+        { name: 'MySQL' },
         { name: 'MongoDB' },
       ],
     },
@@ -91,9 +94,19 @@ export const resumeConfig: ResumeConfig = {
       type: 'badges',
       items: [
         { name: 'Docker' },
-        { name: 'Kubernetes' },
-        { name: 'AWS' },
+        // { name: 'Kubernetes' },
+        // { name: 'AWS' },
         { name: 'GitHub Actions' },
+      ],
+    },
+    {
+      title: { en: 'Environment and IDE', fr: 'Environnement et IDE' },
+      type: 'badges',
+      items: [
+        { name: 'Vim' },
+        { name: 'Codium' },
+        { name: 'Zed'},
+        { name: 'IntelliJ IDEA'}
       ],
     },
     {
@@ -284,15 +297,16 @@ export const resumeConfig: ResumeConfig = {
   // ===== EDUCATION =====
   education: [
     {
-      school: { en: 'University of Paris', fr: 'Université de Paris' },
+      school: { en: 'University of Sorbonne Paris Nord', fr: 'Université de Sorbonne Paris Nord' },
       degree: { en: 'Master in Computer Science', fr: 'Master Informatique' },
-      specialty: { en: 'Web & Mobile Development', fr: 'Développement Web & Mobile' },
-      period: '2017 - 2019',
+      specialty: { en: 'Programming, Safety and Security', fr: 'Programmation, Sureté et Sécurité' },
+      period: '2026',
     },
     {
-      school: { en: 'University of Paris', fr: 'Université de Paris' },
+      school: { en: 'University of Strasbourg', fr: 'Université de Strasbourg' },
       degree: { en: 'Bachelor in Computer Science', fr: 'Licence Informatique' },
-      period: '2014 - 2017',
+      specialty: {en : "Bachelor's Degree in Science, Technology, and Health", fr:"Licence de Sciences, Technologies, Santé"},
+      period: '2024',
     },
   ],
 
@@ -302,23 +316,23 @@ export const resumeConfig: ResumeConfig = {
       title: { en: 'Photography', fr: 'Photographie' },
       details: [
         { en: 'Street photography', fr: 'Photo de rue' },
-        { en: '5 years', fr: '5 ans' },
+        { en: '2 years', fr: '2 ans' },
       ],
     },
     {
-      title: { en: 'Hiking', fr: 'Randonnée' },
-      details: [
-        { en: 'Mountain trails', fr: 'Sentiers de montagne' },
-      ],
+      title: { en: 'Gaming', fr: 'Jeux Vidéos' },
+      // details: [
+      //   { en: 'Mountain trails', fr: 'Sentiers de montagne' },
+      // ],
     },
     {
       title: { en: 'Open Source', fr: 'Open Source' },
     },
     {
-      title: { en: 'Guitar', fr: 'Guitare' },
-      details: [
-        { en: '3 years', fr: '3 ans' },
-      ],
+      title: { en: 'Reading', fr: 'Lecture' },
+      // details: [
+      //   { en: '3 years', fr: '3 ans' },
+      // ],
     },
   ],
 
